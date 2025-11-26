@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier Properties & Automotive - Cars, Plots & Lands</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-building"></i>
+                <span>Premier Properties</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#plots">Plots</a></li>
+                <li><a href="#lands">Lands</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Find Your Perfect Investment</h1>
+            <p>Premium cars, prime plots, and valuable lands - all in one place</p>
+            <div class="hero-buttons">
+                <a href="#cars" class="btn btn-primary">Browse Cars</a>
+                <a href="#plots" class="btn btn-secondary">View Properties</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <h3>500+</h3>
+                <p>Cars Available</p>
+            </div>
+            <div class="stat">
+                <h3>200+</h3>
+                <p>Plots & Lands</p>
+            </div>
+            <div class="stat">
+                <h3>1000+</h3>
+                <p>Happy Clients</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section id="cars" class="section">
+        <div class="container">
+            <h2 class="section-title">Premium Cars</h2>
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Cars</button>
+                <button class="filter-btn" data-filter="luxury">Luxury</button>
+                <button class="filter-btn" data-filter="suv">SUV</button>
+                <button class="filter-btn" data-filter="sedan">Sedan</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+            </div>
+            <div class="cars-grid">
+                <div class="car-card" data-category="luxury">
+                    <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?w=400" alt="Luxury Car">
+                    <div class="card-content">
+                        <h3>Mercedes-Benz S-Class</h3>
+                        <p class="price">$85,000</p>
+                        <div class="car-details">
+                            <span><i class="fas fa-calendar"></i> 2022</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 15,000 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+                <div class="car-card" data-category="suv">
+                    <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=400" alt="SUV">
+                    <div class="card-content">
+                        <h3>BMW X5</h3>
+                        <p class="price">$65,000</p>
+                        <div class="car-details">
+                            <span><i class="fas fa-calendar"></i> 2021</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 25,000 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                        </div>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+                <div class="car-card" data-category="sports">
+                    <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=400" alt="Sports Car">
+                    <div class="card-content">
+                        <h3>Porsche 911</h3>
+                        <p class="price">$120,000</p>
+                        <div class="car-details">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 8,000 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+                <div class="car-card" data-category="sedan">
+                    <img src="https://images.unsplash.com/photo-1628519592419-bf288f08cef5?w=400" alt="Sedan">
+                    <div class="card-content">
+                        <h3>Audi A6</h3>
+                        <p class="price">$55,000</p>
+                        <div class="car-details">
+                            <span><i class="fas fa-calendar"></i> 2022</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 18,000 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Hybrid</span>
+                        </div>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+                <div class="car-card" data-category="luxury">
+                    <img src="https://images.unsplash.com/photo-1571607388263-1044f9ea01dd?w=400" alt="Luxury Car">
+                    <div class="card-content">
+                        <h3>Rolls-Royce Ghost</h3>
+                        <p class="price">$350,000</p>
+                        <div class="car-details">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 5,000 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+                <div class="car-card" data-category="suv">
+                    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=400" alt="SUV">
+                    <div class="card-content">
+                        <h3>Range Rover Sport</h3>
+                        <p class="price">$95,000</p>
+                        <div class="car-details">
+                            <span><i class="fas fa-calendar"></i> 2022</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 12,000 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Hybrid</span>
+                        </div>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+                <div class="car-card" data-category="sports">
+                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400" alt="Sports Car">
+                    <div class="card-content">
+                        <h3>Ferrari 488 GTB</h3>
+                        <p class="price">$280,000</p>
+                        <div class="car-details">
+                            <span><i class="fas fa-calendar"></i> 2021</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 6,500 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+                <div class="car-card" data-category="sedan">
+                    <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=400" alt="Sedan">
+                    <div class="card-content">
+                        <h3>BMW 7 Series</h3>
+                        <p class="price">$75,000</p>
+                        <div class="car-details">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 8,500 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Hybrid</span>
+                        </div>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+                <div class="car-card" data-category="luxury">
+                    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=400" alt="Luxury Car">
+                    <div class="card-content">
+                        <h3>Bentley Continental GT</h3>
+                        <p class="price">$220,000</p>
+                        <div class="car-details">
+                            <span><i class="fas fa-calendar"></i> 2022</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 9,200 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+                <div class="car-card" data-category="suv">
+                    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=400" alt="SUV">
+                    <div class="card-content">
+                        <h3>Porsche Cayenne</h3>
+                        <p class="price">$85,000</p>
+                        <div class="car-details">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 7,800 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+                <div class="car-card" data-category="sports">
+                    <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=400" alt="Sports Car">
+                    <div class="card-content">
+                        <h3>Lamborghini Huracán</h3>
+                        <p class="price">$240,000</p>
+                        <div class="car-details">
+                            <span><i class="fas fa-calendar"></i> 2022</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 4,200 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plots Section -->
+    <section id="plots" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Prime Plots</h2>
+            <div class="properties-grid">
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400" alt="Residential Plot">
+                    <div class="card-content">
+                        <h3>Residential Plot - Downtown</h3>
+                        <p class="price">$150,000</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-ruler-combined"></i> 2,500 sq ft</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Prime Location</span>
+                            <span><i class="fas fa-certificate"></i> Clear Title</span>
+                        </div>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=400" alt="Commercial Plot">
+                    <div class="card-content">
+                        <h3>Commercial Plot - Business District</h3>
+                        <p class="price">$300,000</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-ruler-combined"></i> 5,000 sq ft</span>
+                            <span><i class="fas fa-map-marker-alt"></i> High Traffic</span>
+                            <span><i class="fas fa-certificate"></i> Ready to Build</span>
+                        </div>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400" alt="Luxury Plot">
+                    <div class="card-content">
+                        <h3>Luxury Plot - Hillside</h3>
+                        <p class="price">$250,000</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-ruler-combined"></i> 4,000 sq ft</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Scenic View</span>
+                            <span><i class="fas fa-certificate"></i> Premium Location</span>
+                        </div>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lands Section -->
+    <section id="lands" class="section">
+        <div class="container">
+            <h2 class="section-title">Agricultural & Investment Lands</h2>
+            <div class="properties-grid">
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400" alt="Agricultural Land">
+                    <div class="card-content">
+                        <h3>Agricultural Land - Fertile Valley</h3>
+                        <p class="price">$50,000/acre</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-ruler-combined"></i> 10 acres</span>
+                            <span><i class="fas fa-tint"></i> Water Access</span>
+                            <span><i class="fas fa-seedling"></i> Fertile Soil</span>
+                        </div>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400" alt="Forest Land">
+                    <div class="card-content">
+                        <h3>Forest Land - Investment Opportunity</h3>
+                        <p class="price">$25,000/acre</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-ruler-combined"></i> 50 acres</span>
+                            <span><i class="fas fa-tree"></i> Mature Trees</span>
+                            <span><i class="fas fa-chart-line"></i> High ROI</span>
+                        </div>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400" alt="Development Land">
+                    <div class="card-content">
+                        <h3>Development Land - Future City</h3>
+                        <p class="price">$75,000/acre</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-ruler-combined"></i> 25 acres</span>
+                            <span><i class="fas fa-road"></i> Road Access</span>
+                            <span><i class="fas fa-city"></i> Development Ready</span>
+                        </div>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Premier Properties</h2>
+                    <p>With over 15 years of experience in the automotive and real estate industry, Premier Properties has established itself as a trusted name for quality investments. We specialize in premium cars, prime plots, and valuable agricultural lands.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Verified Listings</h4>
+                            <p>All properties and vehicles are thoroughly verified</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Expert Guidance</h4>
+                            <p>Professional consultation for all your investments</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <h4>24/7 Support</h4>
+                            <p>Round-the-clock customer service and support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Business District, City Center, State 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>0758111069</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>tesskimani64@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="from_name" placeholder="Your Name" required>
+                        <input type="email" name="from_email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                        <select name="interest" required>
+                            <option value="">Interest In</option>
+                            <option value="cars">Cars</option>
+                            <option value="plots">Plots</option>
+                            <option value="lands">Lands</option>
+                        </select>
+                    </div>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-building"></i>
+                        <span>Premier Properties</span>
+                    </div>
+                    <p>Your trusted partner for premium cars, prime plots, and valuable lands.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#cars">Cars</a></li>
+                        <li><a href="#plots">Plots</a></li>
+                        <li><a href="#lands">Lands</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Car Financing</a></li>
+                        <li><a href="#">Property Valuation</a></li>
+                        <li><a href="#">Legal Assistance</a></li>
+                        <li><a href="#">Investment Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> 0758111069</p>
+                    <p><i class="fas fa-envelope"></i> tesskimani64@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Business District</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Premier Properties. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
