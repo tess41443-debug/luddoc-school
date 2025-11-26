@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premier Properties & Automotive - Cars, Plots & Lands</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Ludoc Technical Institute - Excellence in Technical Education</title>
+    <link rel="stylesheet" href="ludoc-styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -12,16 +12,17 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <i class="fas fa-building"></i>
-                <span>Premier Properties</span>
+                <i class="fas fa-graduation-cap"></i>
+                <span>Ludoc Technical Institute</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#cars">Cars</a></li>
-                <li><a href="#plots">Plots</a></li>
-                <li><a href="#lands">Lands</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#facilities">Facilities</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="btn-apply">Apply Now</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -34,311 +35,367 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Find Your Perfect Investment</h1>
-            <p>Premium cars, prime plots, and valuable lands - all in one place</p>
+            <h1>Shape Your Future with Technical Excellence</h1>
+            <p>Leading technical education institute preparing students for tomorrow's challenges</p>
             <div class="hero-buttons">
-                <a href="#cars" class="btn btn-primary">Browse Cars</a>
-                <a href="#plots" class="btn btn-secondary">View Properties</a>
+                <a href="#programs" class="btn btn-primary">Explore Programs</a>
+                <a href="#admissions" class="btn btn-secondary">Apply Today</a>
             </div>
         </div>
         <div class="hero-stats">
             <div class="stat">
-                <h3>500+</h3>
-                <p>Cars Available</p>
+                <h3>15+</h3>
+                <p>Years of Excellence</p>
             </div>
             <div class="stat">
-                <h3>200+</h3>
-                <p>Plots & Lands</p>
+                <h3>5000+</h3>
+                <p>Graduates</p>
             </div>
             <div class="stat">
-                <h3>1000+</h3>
-                <p>Happy Clients</p>
+                <h3>95%</h3>
+                <p>Job Placement</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Cars Section -->
-    <section id="cars" class="section">
-        <div class="container">
-            <h2 class="section-title">Premium Cars</h2>
-            <div class="filter-tabs">
-                <button class="filter-btn active" data-filter="all">All Cars</button>
-                <button class="filter-btn" data-filter="luxury">Luxury</button>
-                <button class="filter-btn" data-filter="suv">SUV</button>
-                <button class="filter-btn" data-filter="sedan">Sedan</button>
-                <button class="filter-btn" data-filter="sports">Sports</button>
-            </div>
-            <div class="cars-grid">
-                <div class="car-card" data-category="luxury">
-                    <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?w=400" alt="Luxury Car">
-                    <div class="card-content">
-                        <h3>Mercedes-Benz S-Class</h3>
-                        <p class="price">$85,000</p>
-                        <div class="car-details">
-                            <span><i class="fas fa-calendar"></i> 2022</span>
-                            <span><i class="fas fa-tachometer-alt"></i> 15,000 km</span>
-                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
-                        </div>
-                        <button class="btn btn-primary">View Details</button>
-                    </div>
-                </div>
-                <div class="car-card" data-category="suv">
-                    <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=400" alt="SUV">
-                    <div class="card-content">
-                        <h3>BMW X5</h3>
-                        <p class="price">$65,000</p>
-                        <div class="car-details">
-                            <span><i class="fas fa-calendar"></i> 2021</span>
-                            <span><i class="fas fa-tachometer-alt"></i> 25,000 km</span>
-                            <span><i class="fas fa-gas-pump"></i> Diesel</span>
-                        </div>
-                        <button class="btn btn-primary">View Details</button>
-                    </div>
-                </div>
-                <div class="car-card" data-category="sports">
-                    <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=400" alt="Sports Car">
-                    <div class="card-content">
-                        <h3>Porsche 911</h3>
-                        <p class="price">$120,000</p>
-                        <div class="car-details">
-                            <span><i class="fas fa-calendar"></i> 2023</span>
-                            <span><i class="fas fa-tachometer-alt"></i> 8,000 km</span>
-                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
-                        </div>
-                        <button class="btn btn-primary">View Details</button>
-                    </div>
-                </div>
-                <div class="car-card" data-category="sedan">
-                    <img src="https://images.unsplash.com/photo-1628519592419-bf288f08cef5?w=400" alt="Sedan">
-                    <div class="card-content">
-                        <h3>Audi A6</h3>
-                        <p class="price">$55,000</p>
-                        <div class="car-details">
-                            <span><i class="fas fa-calendar"></i> 2022</span>
-                            <span><i class="fas fa-tachometer-alt"></i> 18,000 km</span>
-                            <span><i class="fas fa-gas-pump"></i> Hybrid</span>
-                        </div>
-                        <button class="btn btn-primary">View Details</button>
-                    </div>
-                </div>
-                <div class="car-card" data-category="luxury">
-                    <img src="https://images.unsplash.com/photo-1571607388263-1044f9ea01dd?w=400" alt="Luxury Car">
-                    <div class="card-content">
-                        <h3>Rolls-Royce Ghost</h3>
-                        <p class="price">$350,000</p>
-                        <div class="car-details">
-                            <span><i class="fas fa-calendar"></i> 2023</span>
-                            <span><i class="fas fa-tachometer-alt"></i> 5,000 km</span>
-                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
-                        </div>
-                        <button class="btn btn-primary">View Details</button>
-                    </div>
-                </div>
-                <div class="car-card" data-category="suv">
-                    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=400" alt="SUV">
-                    <div class="card-content">
-                        <h3>Range Rover Sport</h3>
-                        <p class="price">$95,000</p>
-                        <div class="car-details">
-                            <span><i class="fas fa-calendar"></i> 2022</span>
-                            <span><i class="fas fa-tachometer-alt"></i> 12,000 km</span>
-                            <span><i class="fas fa-gas-pump"></i> Hybrid</span>
-                        </div>
-                        <button class="btn btn-primary">View Details</button>
-                    </div>
-                </div>
-                <div class="car-card" data-category="sports">
-                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400" alt="Sports Car">
-                    <div class="card-content">
-                        <h3>Ferrari 488 GTB</h3>
-                        <p class="price">$280,000</p>
-                        <div class="car-details">
-                            <span><i class="fas fa-calendar"></i> 2021</span>
-                            <span><i class="fas fa-tachometer-alt"></i> 6,500 km</span>
-                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
-                        </div>
-                        <button class="btn btn-primary">View Details</button>
-                    </div>
-                </div>
-                <div class="car-card" data-category="sedan">
-                    <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=400" alt="Sedan">
-                    <div class="card-content">
-                        <h3>BMW 7 Series</h3>
-                        <p class="price">$75,000</p>
-                        <div class="car-details">
-                            <span><i class="fas fa-calendar"></i> 2023</span>
-                            <span><i class="fas fa-tachometer-alt"></i> 8,500 km</span>
-                            <span><i class="fas fa-gas-pump"></i> Hybrid</span>
-                        </div>
-                        <button class="btn btn-primary">View Details</button>
-                    </div>
-                </div>
-                <div class="car-card" data-category="luxury">
-                    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=400" alt="Luxury Car">
-                    <div class="card-content">
-                        <h3>Bentley Continental GT</h3>
-                        <p class="price">$220,000</p>
-                        <div class="car-details">
-                            <span><i class="fas fa-calendar"></i> 2022</span>
-                            <span><i class="fas fa-tachometer-alt"></i> 9,200 km</span>
-                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
-                        </div>
-                        <button class="btn btn-primary">View Details</button>
-                    </div>
-                </div>
-                <div class="car-card" data-category="suv">
-                    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=400" alt="SUV">
-                    <div class="card-content">
-                        <h3>Porsche Cayenne</h3>
-                        <p class="price">$85,000</p>
-                        <div class="car-details">
-                            <span><i class="fas fa-calendar"></i> 2023</span>
-                            <span><i class="fas fa-tachometer-alt"></i> 7,800 km</span>
-                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
-                        </div>
-                        <button class="btn btn-primary">View Details</button>
-                    </div>
-                </div>
-                <div class="car-card" data-category="sports">
-                    <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=400" alt="Sports Car">
-                    <div class="card-content">
-                        <h3>Lamborghini Huracán</h3>
-                        <p class="price">$240,000</p>
-                        <div class="car-details">
-                            <span><i class="fas fa-calendar"></i> 2022</span>
-                            <span><i class="fas fa-tachometer-alt"></i> 4,200 km</span>
-                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
-                        </div>
-                        <button class="btn btn-primary">View Details</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Plots Section -->
-    <section id="plots" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Prime Plots</h2>
-            <div class="properties-grid">
-                <div class="property-card">
-                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400" alt="Residential Plot">
-                    <div class="card-content">
-                        <h3>Residential Plot - Downtown</h3>
-                        <p class="price">$150,000</p>
-                        <div class="property-details">
-                            <span><i class="fas fa-ruler-combined"></i> 2,500 sq ft</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Prime Location</span>
-                            <span><i class="fas fa-certificate"></i> Clear Title</span>
-                        </div>
-                        <button class="btn btn-primary">View Details</button>
-                    </div>
-                </div>
-                <div class="property-card">
-                    <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=400" alt="Commercial Plot">
-                    <div class="card-content">
-                        <h3>Commercial Plot - Business District</h3>
-                        <p class="price">$300,000</p>
-                        <div class="property-details">
-                            <span><i class="fas fa-ruler-combined"></i> 5,000 sq ft</span>
-                            <span><i class="fas fa-map-marker-alt"></i> High Traffic</span>
-                            <span><i class="fas fa-certificate"></i> Ready to Build</span>
-                        </div>
-                        <button class="btn btn-primary">View Details</button>
-                    </div>
-                </div>
-                <div class="property-card">
-                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400" alt="Luxury Plot">
-                    <div class="card-content">
-                        <h3>Luxury Plot - Hillside</h3>
-                        <p class="price">$250,000</p>
-                        <div class="property-details">
-                            <span><i class="fas fa-ruler-combined"></i> 4,000 sq ft</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Scenic View</span>
-                            <span><i class="fas fa-certificate"></i> Premium Location</span>
-                        </div>
-                        <button class="btn btn-primary">View Details</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lands Section -->
-    <section id="lands" class="section">
-        <div class="container">
-            <h2 class="section-title">Agricultural & Investment Lands</h2>
-            <div class="properties-grid">
-                <div class="property-card">
-                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400" alt="Agricultural Land">
-                    <div class="card-content">
-                        <h3>Agricultural Land - Fertile Valley</h3>
-                        <p class="price">$50,000/acre</p>
-                        <div class="property-details">
-                            <span><i class="fas fa-ruler-combined"></i> 10 acres</span>
-                            <span><i class="fas fa-tint"></i> Water Access</span>
-                            <span><i class="fas fa-seedling"></i> Fertile Soil</span>
-                        </div>
-                        <button class="btn btn-primary">View Details</button>
-                    </div>
-                </div>
-                <div class="property-card">
-                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400" alt="Forest Land">
-                    <div class="card-content">
-                        <h3>Forest Land - Investment Opportunity</h3>
-                        <p class="price">$25,000/acre</p>
-                        <div class="property-details">
-                            <span><i class="fas fa-ruler-combined"></i> 50 acres</span>
-                            <span><i class="fas fa-tree"></i> Mature Trees</span>
-                            <span><i class="fas fa-chart-line"></i> High ROI</span>
-                        </div>
-                        <button class="btn btn-primary">View Details</button>
-                    </div>
-                </div>
-                <div class="property-card">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400" alt="Development Land">
-                    <div class="card-content">
-                        <h3>Development Land - Future City</h3>
-                        <p class="price">$75,000/acre</p>
-                        <div class="property-details">
-                            <span><i class="fas fa-ruler-combined"></i> 25 acres</span>
-                            <span><i class="fas fa-road"></i> Road Access</span>
-                            <span><i class="fas fa-city"></i> Development Ready</span>
-                        </div>
-                        <button class="btn btn-primary">View Details</button>
-                    </div>
-                </div>
+            <div class="stat">
+                <h3>50+</h3>
+                <p>Industry Partners</p>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section bg-light">
+    <section id="about" class="section">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>About Premier Properties</h2>
-                    <p>With over 15 years of experience in the automotive and real estate industry, Premier Properties has established itself as a trusted name for quality investments. We specialize in premium cars, prime plots, and valuable agricultural lands.</p>
+                    <h2>About Ludoc Technical Institute</h2>
+                    <p>Established in 2009, Ludoc Technical Institute has been at the forefront of technical education, providing world-class training and education in various technical fields. Our commitment to excellence and innovation has made us a preferred choice for students seeking quality technical education.</p>
                     <div class="features">
                         <div class="feature">
-                            <i class="fas fa-shield-alt"></i>
-                            <h4>Verified Listings</h4>
-                            <p>All properties and vehicles are thoroughly verified</p>
+                            <i class="fas fa-award"></i>
+                            <h4>Accredited Programs</h4>
+                            <p>All programs are nationally accredited and industry-recognized</p>
                         </div>
                         <div class="feature">
-                            <i class="fas fa-handshake"></i>
-                            <h4>Expert Guidance</h4>
-                            <p>Professional consultation for all your investments</p>
+                            <i class="fas fa-users"></i>
+                            <h4>Expert Faculty</h4>
+                            <p>Learn from industry professionals and experienced educators</p>
                         </div>
                         <div class="feature">
-                            <i class="fas fa-clock"></i>
-                            <h4>24/7 Support</h4>
-                            <p>Round-the-clock customer service and support</p>
+                            <i class="fas fa-laptop-code"></i>
+                            <h4>Modern Labs</h4>
+                            <p>State-of-the-art laboratories and equipment for hands-on learning</p>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500" alt="About Us">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=500" alt="Students in lab">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Programs</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Automotive Technology</h3>
+                    <p class="duration">Duration: 18 Months</p>
+                    <ul class="program-features">
+                        <li>Engine Diagnostics</li>
+                        <li>Auto Mechanics</li>
+                        <li>Vehicle Maintenance</li>
+                        <li>Practical Training</li>
+                    </ul>
+                    <button class="btn btn-primary program-btn" data-program="automotive-technology">Learn More</button>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Carpentry & Cabinet Making</h3>
+                    <p class="duration">Duration: 12 Months</p>
+                    <ul class="program-features">
+                        <li>Wood Working</li>
+                        <li>Cabinet Design</li>
+                        <li>Furniture Making</li>
+                        <li>Tool Mastery</li>
+                    </ul>
+                    <button class="btn btn-primary program-btn" data-program="carpentry-cabinet">Learn More</button>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Catering</h3>
+                    <p class="duration">Duration: 6 Months</p>
+                    <ul class="program-features">
+                        <li>Food Preparation</li>
+                        <li>Menu Planning</li>
+                        <li>Event Catering</li>
+                        <li>Food Safety</li>
+                    </ul>
+                    <button class="btn btn-primary program-btn" data-program="catering">Learn More</button>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Computer Applications</h3>
+                    <p class="duration">Duration: 6 Months</p>
+                    <ul class="program-features">
+                        <li>Microsoft Office</li>
+                        <li>Data Entry</li>
+                        <li>Basic Programming</li>
+                        <li>Digital Literacy</li>
+                    </ul>
+                    <button class="btn btn-primary program-btn" data-program="computer-applications">Learn More</button>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3>Driving</h3>
+                    <p class="duration">Duration: 1 Month</p>
+                    <ul class="program-features">
+                        <li>Road Safety</li>
+                        <li>Traffic Rules</li>
+                        <li>Practical Driving</li>
+                        <li>License Preparation</li>
+                    </ul>
+                    <button class="btn btn-primary program-btn" data-program="driving">Learn More</button>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Electronics Installation</h3>
+                    <p class="duration">Duration: 12 Months</p>
+                    <ul class="program-features">
+                        <li>Wiring Systems</li>
+                        <li>Circuit Installation</li>
+                        <li>Safety Protocols</li>
+                        <li>Troubleshooting</li>
+                    </ul>
+                    <button class="btn btn-primary program-btn" data-program="electronics-installation">Learn More</button>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Electronics</h3>
+                    <p class="duration">Duration: 18 Months</p>
+                    <ul class="program-features">
+                        <li>Circuit Design</li>
+                        <li>Component Testing</li>
+                        <li>Repair Techniques</li>
+                        <li>Digital Systems</li>
+                    </ul>
+                    <button class="btn btn-primary program-btn" data-program="electronics">Learn More</button>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>Food & Beverage Production</h3>
+                    <p class="duration">Duration: 9 Months</p>
+                    <ul class="program-features">
+                        <li>Food Processing</li>
+                        <li>Quality Control</li>
+                        <li>Packaging</li>
+                        <li>Hygiene Standards</li>
+                    </ul>
+                    <button class="btn btn-primary program-btn" data-program="food-beverage">Learn More</button>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Hair, Beauty, Barbering & Cosmetology</h3>
+                    <p class="duration">Duration: 12 Months</p>
+                    <ul class="program-features">
+                        <li>Hair Styling</li>
+                        <li>Makeup Artistry</li>
+                        <li>Skin Care</li>
+                        <li>Salon Management</li>
+                    </ul>
+                    <button class="btn btn-primary program-btn" data-program="beauty-cosmetology">Learn More</button>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Holiday Training for Kids</h3>
+                    <p class="duration">Duration: 4 Weeks</p>
+                    <ul class="program-features">
+                        <li>Creative Arts</li>
+                        <li>Basic Computing</li>
+                        <li>Life Skills</li>
+                        <li>Fun Activities</li>
+                    </ul>
+                    <button class="btn btn-primary program-btn" data-program="holiday-kids">Learn More</button>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Information Communication & Technology</h3>
+                    <p class="duration">Duration: 18 Months</p>
+                    <ul class="program-features">
+                        <li>Network Administration</li>
+                        <li>System Support</li>
+                        <li>Database Management</li>
+                        <li>IT Security</li>
+                    </ul>
+                    <button class="btn btn-primary program-btn" data-program="ict">Learn More</button>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Plumbing & Metal Work</h3>
+                    <p class="duration">Duration: 15 Months</p>
+                    <ul class="program-features">
+                        <li>Pipe Installation</li>
+                        <li>Welding Techniques</li>
+                        <li>Metal Fabrication</li>
+                        <li>Repair Services</li>
+                    </ul>
+                    <button class="btn btn-primary program-btn" data-program="plumbing-metal">Learn More</button>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Developer</h3>
+                    <p class="duration">Duration: 12 Months</p>
+                    <ul class="program-features">
+                        <li>HTML/CSS/JavaScript</li>
+                        <li>Responsive Design</li>
+                        <li>Database Integration</li>
+                        <li>Portfolio Development</li>
+                    </ul>
+                    <button class="btn btn-primary program-btn" data-program="web-developer">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section id="admissions" class="section">
+        <div class="container">
+            <h2 class="section-title">Admissions</h2>
+            <div class="admissions-content">
+                <div class="admission-info">
+                    <h3>Admission Requirements</h3>
+                    <div class="requirements">
+                        <div class="requirement">
+                            <i class="fas fa-check-circle"></i>
+                            <span>High School Diploma or Equivalent</span>
+                        </div>
+                        <div class="requirement">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Minimum GPA of 2.5</span>
+                        </div>
+                        <div class="requirement">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Completed Application Form</span>
+                        </div>
+                        <div class="requirement">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Official Transcripts</span>
+                        </div>
+                    </div>
+                    <div class="admission-dates">
+                        <h4>Important Dates</h4>
+                        <div class="date-item">
+                            <strong>Fall Semester:</strong> Applications due July 15th
+                        </div>
+                        <div class="date-item">
+                            <strong>Spring Semester:</strong> Applications due December 1st
+                        </div>
+                        <div class="date-item">
+                            <strong>Summer Session:</strong> Applications due April 15th
+                        </div>
+                    </div>
+                </div>
+                <div class="application-form">
+                    <h3>Quick Application</h3>
+                    <form class="admission-form">
+                        <div class="form-row">
+                            <input type="text" placeholder="First Name" required>
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" placeholder="Email Address" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <select required>
+                            <option value="">Select Program</option>
+                            <option value="automotive-technology">Automotive Technology</option>
+                            <option value="carpentry-cabinet">Carpentry & Cabinet Making</option>
+                            <option value="catering">Catering</option>
+                            <option value="computer-applications">Computer Applications</option>
+                            <option value="driving">Driving</option>
+                            <option value="electronics-installation">Electronics Installation</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="food-beverage">Food & Beverage Production</option>
+                            <option value="beauty-cosmetology">Hair, Beauty, Barbering & Cosmetology</option>
+                            <option value="holiday-kids">Holiday Training for Kids</option>
+                            <option value="ict">Information Communication & Technology</option>
+                            <option value="plumbing-metal">Plumbing & Metal Work</option>
+                            <option value="web-developer">Web Developer</option>
+                        </select>
+                        <select required>
+                            <option value="">Preferred Start Date</option>
+                            <option value="fall">Fall 2024</option>
+                            <option value="spring">Spring 2025</option>
+                            <option value="summer">Summer 2025</option>
+                        </select>
+                        <textarea placeholder="Tell us about your goals and interests" rows="4"></textarea>
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">World-Class Facilities</h2>
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400" alt="Computer Lab">
+                    <div class="facility-content">
+                        <h3>Computer Labs</h3>
+                        <p>Modern computer laboratories equipped with latest software and hardware for comprehensive learning experience.</p>
+                    </div>
+                </div>
+                <div class="facility-card">
+                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400" alt="Engineering Workshop">
+                    <div class="facility-content">
+                        <h3>Engineering Workshops</h3>
+                        <p>Fully equipped workshops with industrial-grade machinery and tools for hands-on technical training.</p>
+                    </div>
+                </div>
+                <div class="facility-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Library">
+                    <div class="facility-content">
+                        <h3>Digital Library</h3>
+                        <p>Extensive collection of technical books, journals, and digital resources for research and study.</p>
+                    </div>
+                </div>
+                <div class="facility-card">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400" alt="Student Center">
+                    <div class="facility-content">
+                        <h3>Student Center</h3>
+                        <p>Modern student center with recreational facilities, cafeteria, and collaborative study spaces.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -353,49 +410,53 @@
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>Address</h4>
-                            <p>123 Business District, City Center, State 12345</p>
+                            <h4>Campus Address</h4>
+                            <p>123 Technical Drive<br>Education City, State 12345</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
                             <h4>Phone</h4>
-                            <p>0758111069</p>
+                            <p>Main: +1 (555) 123-4567<br>Admissions: +1 (555) 123-4568</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p>tesskimani64@gmail.com</p>
+                            <p>info@ludoctech.edu<br>admissions@ludoctech.edu</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-clock"></i>
                         <div>
-                            <h4>Business Hours</h4>
-                            <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+                            <h4>Office Hours</h4>
+                            <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 2:00 PM</p>
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" name="from_name" placeholder="Your Name" required>
-                        <input type="email" name="from_email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" name="phone" placeholder="Phone Number" required>
-                        <select name="interest" required>
-                            <option value="">Interest In</option>
-                            <option value="cars">Cars</option>
-                            <option value="plots">Plots</option>
-                            <option value="lands">Lands</option>
-                        </select>
-                    </div>
-                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                <div class="contact-form">
+                    <h3>Get in Touch</h3>
+                    <form class="inquiry-form">
+                        <div class="form-row">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="tel" placeholder="Phone Number">
+                            <select>
+                                <option value="">Inquiry Type</option>
+                                <option value="admissions">Admissions</option>
+                                <option value="programs">Programs</option>
+                                <option value="financial-aid">Financial Aid</option>
+                                <option value="general">General Information</option>
+                            </select>
+                        </div>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -406,49 +467,76 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="logo">
-                        <i class="fas fa-building"></i>
-                        <span>Premier Properties</span>
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Ludoc Technical Institute</span>
                     </div>
-                    <p>Your trusted partner for premium cars, prime plots, and valuable lands.</p>
+                    <p>Empowering students with technical excellence and preparing them for successful careers in technology and engineering.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#cars">Cars</a></li>
-                        <li><a href="#plots">Plots</a></li>
-                        <li><a href="#lands">Lands</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#admissions">Admissions</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Services</h4>
+                    <h4>Student Services</h4>
                     <ul>
-                        <li><a href="#">Car Financing</a></li>
-                        <li><a href="#">Property Valuation</a></li>
-                        <li><a href="#">Legal Assistance</a></li>
-                        <li><a href="#">Investment Consulting</a></li>
+                        <li><a href="#">Student Portal</a></li>
+                        <li><a href="#">Financial Aid</a></li>
+                        <li><a href="#">Career Services</a></li>
+                        <li><a href="#">Academic Calendar</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact Info</h4>
-                    <p><i class="fas fa-phone"></i> 0758111069</p>
-                    <p><i class="fas fa-envelope"></i> tesskimani64@gmail.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Business District</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@ludoctech.edu</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Technical Drive</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Premier Properties. All rights reserved.</p>
+                <p>&copy; 2024 Ludoc Technical Institute. All rights reserved. | Accredited by National Technical Education Board</p>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="script.js"></script>
+    <!-- Program Modal -->
+    <div id="programModal" class="program-modal">
+        <div class="program-modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="program-modal-body">
+                <h2 id="modalTitle">Program Title</h2>
+                <div class="program-details">
+                    <div class="detail-section">
+                        <h3>Program Overview</h3>
+                        <p id="modalOverview">Program overview content</p>
+                    </div>
+                    <div class="detail-section">
+                        <h3>Curriculum</h3>
+                        <ul id="modalCurriculum" class="curriculum-list"></ul>
+                    </div>
+                    <div class="detail-section">
+                        <h3>Career Opportunities</h3>
+                        <ul id="modalCareers" class="curriculum-list"></ul>
+                    </div>
+                    <div class="detail-section">
+                        <h3>Requirements</h3>
+                        <p id="modalRequirements">Program requirements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="ludoc-script.js"></script>
 </body>
 </html>
